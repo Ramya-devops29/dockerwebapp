@@ -12,10 +12,10 @@ services:
     ports:
       - "2222:8080"
     networks:
-      - hisnetwrok
+      - hisnetwork
       
 networks:
     mynetwork:
        driver: bridge
-    hisnetwrok:
+    hisnetwork:
        driver: bridge
