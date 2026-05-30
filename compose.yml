@@ -14,7 +14,7 @@ services:
     networks:
       - hisnetwrok
       
-netwroks:
+networks:
     mynetwork:
        driver: bridge
     hisnetwrok:
