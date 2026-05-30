@@ -5,9 +5,17 @@ services:
     image: shaikmustafa/automation:db
     ports:
       - "3306:3306"
+    networks:
+      - mynetwork
   application:
     image: shaikmustafa/automation:app
     ports:
       - "2222:8080"
-
-
+    networks:
+      - hisnetwrok
+      
+netwroks:
+    mynetwork:
+       driver: bridge
+    hisnetwrok:
+       driver: bridge
